@@ -1,0 +1,36 @@
+{
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "strict": true,
+  "trailing": true,
+  "undef": true,
+  "unused": "vars",
+  "strict": false,
+  "esnext": true,
+  "devel": true,
+  "predef": [
+    "Meteor",
+    "Session",
+    "System",
+    "lodash",
+    "Mongo",
+    "Tracker",
+    "moment",
+    "HTTP",
+    "ReactMeteorData",
+    "React",
+    "ReactRouter",
+    "_",
+    "TwitMaker"
+  ],
+  "globals": {
+    "Constants": false,
+    "Tweets": false
+  }
+}
