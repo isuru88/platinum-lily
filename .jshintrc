@@ -27,10 +27,13 @@
     "React",
     "ReactRouter",
     "_",
-    "TwitMaker"
+    "TwitMaker",
+    "gest"
   ],
   "globals": {
     "Constants": false,
-    "Tweets": false
+    "Tweets": false,
+    "TweetNotifications": false,
+    "UserDetails": false
   }
 }

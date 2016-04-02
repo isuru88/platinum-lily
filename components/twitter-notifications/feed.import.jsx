@@ -1,4 +1,4 @@
-import Tweet from './tweet';
+import Notification from './notification';
 
 export default React.createClass({
   displayName: 'TwitterFeed',
@@ -7,7 +7,7 @@ export default React.createClass({
   getMeteorData() {
     "use strict";
     return {
-      tweets: Tweets.find({}, {
+      notifications: TweetNotifications.find({}, {
         sort: {
           created_at: -1
         },
@@ -16,16 +16,16 @@ export default React.createClass({
     };
   },
 
-  _getTweets() {
+  _getNotifications() {
     "use strict";
     var items = [];
 
-    if (this.data.tweets) {
+    if (this.data.notifications) {
       this
         .data
-        .tweets
-        .map(function(tweet) {
-          items.push(<Tweet data={tweet} />);
+        .notifications
+        .map(function(notification) {
+          items.push(<Notification data={notification}/>);
         });
     }
 
@@ -40,11 +40,11 @@ export default React.createClass({
         <h2 className="ui header">
           <i className="twitter icon"></i>
           <div className="content">
-            Live Tweets
+            Activity
           </div>
         </h2>
         <div className="ui small feed">
-          {this._getTweets()}
+          {this._getNotifications()}
         </div>
       </div>
     );

@@ -1,6 +1,6 @@
 import Clock from './clock';
 import Message from './message';
-import TwitterFeed from './twitter/feed';
+import GestureFeed from './gesture-feed';
 
 export default React.createClass({
   displayName: 'Main',
@@ -17,14 +17,14 @@ export default React.createClass({
       <div>
         <div className="ui three column grid">
           <div className="four wide column">
-            <TwitterFeed/>
+            <GestureFeed/>
           </div>
           <div className="eight wide column"></div>
           <div className="four wide column">
             <Clock/>
           </div>
         </div>
-        <Message text="GOOD MORNING!"/>
+        <Message text="YOU'RE AWESOME!"/>
       </div>
     );
   }

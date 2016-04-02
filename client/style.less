@@ -2,6 +2,7 @@ body {
   background-color: #000000;
   background-attachment: fixed;
   color: #FFFFFF;
+  overflow: hidden;
 }
 .clock {
   font-family: 'Orbitron';
@@ -18,13 +19,19 @@ body {
   color: #FFFFFF;
   text-align: center;
 }
-.ui.header{
+.ui.header {
   padding-top: 10px;
   color: #FFFFFF;
 }
 .ui.feed .event .content {
   .date {
     color: #FFFFFF;
+    font-weight: bold;
+    .extra {
+      color: #FFFFFF;
+      font-size: 0.8em;
+      font-weight: normal;
+    }
   }
   .meta {
     color: #FFFFFF;
