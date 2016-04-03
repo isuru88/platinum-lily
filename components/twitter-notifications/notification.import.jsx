@@ -5,7 +5,7 @@ export default React.createClass({
     "use strict";
     if (this.props.data && this.props.data.text) {
       return (
-        <div className="meta">
+        <div>
           {this.props.data.text}
         </div>
       );

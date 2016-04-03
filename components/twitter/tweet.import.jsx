@@ -16,7 +16,7 @@ export default React.createClass({
                 .subtract(2, 'minutes')
                 .fromNow(true)}</span>
           </div>
-          <div className="meta">
+          <div>
             {this.props.data.text}
           </div>
         </div>
