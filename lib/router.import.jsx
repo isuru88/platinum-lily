@@ -1,5 +1,5 @@
 import App from '/app';
-import DisplayBox from '/components/main';
+import DisplayBox from '/client/components/main';
 
 Meteor.startup(function() {
 
