@@ -14,26 +14,6 @@
   "strict": false,
   "esnext": true,
   "devel": true,
-  "predef": [
-    "Meteor",
-    "Session",
-    "System",
-    "lodash",
-    "Mongo",
-    "Tracker",
-    "moment",
-    "HTTP",
-    "ReactMeteorData",
-    "React",
-    "ReactRouter",
-    "_",
-    "TwitMaker",
-    "gest"
-  ],
-  "globals": {
-    "Constants": false,
-    "Tweets": false,
-    "TweetNotifications": false,
-    "UserDetails": false
-  }
+  "predef": [],
+  "globals": {}
 }
